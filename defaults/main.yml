@@ -120,6 +120,8 @@ mariadb_upstream_version: '11.4'
 # -------------------------------------
 # Galera
 # -------------------------------------
+mariadb_galera_sst_user: galera
+mariadb_galera_sst_password: galera
 mariadb_galera_resetup: false
 mariadb_wsrep_node_address: '{{ ansible_default_ipv4.address if ansible_default_ipv4 is defined else "127.0.0.1" }}'
 mariadb_galera_members: []
